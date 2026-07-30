@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input id="cityInput" type="text" placeholder="Enter City Name" spellcheck="false">
+            <button id="searchBtn" type="button"><img src="images/search.png" alt="Search"></button>
+        </div>
+
+        <div class="presets">
+            <button class="city-btn" data-city="Paris">Paris</button>
+            <button class="city-btn" data-city="London">London</button>
+            <button class="city-btn" data-city="New York">New York</button>
+            <button class="city-btn" data-city="Tokyo">Tokyo</button>
+            <button class="city-btn" data-city="Bangalore">Bangalore</button>
+            <button class="city-btn" data-city="Islamabad">Islamabad</button>
+            <button class="city-btn" data-city="Buner" data-lat="34.4984254" data-lon="72.4632778">Buner</button>
+        </div>
+
+        <div class="weather" id="weatherCard">
+            <img id="weatherIcon" src="images/rain.png" alt="Weather Icon">
+
+            <div class="city">
+                <h2 id="cityName">New York</h2>
+                <p id="countryName">Country</p>
+            </div>
+
+            <div class="temp">
+                <h1>22°C</h1>
+                <p>Weather Description</p>
+            </div>
+
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="Humidity Icon">
+                    <div>
+                        <p class="value">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="Wind Icon">
+                        <div>
+                            <p class="value">15 km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
